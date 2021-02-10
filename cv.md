@@ -15,7 +15,7 @@ As I became more and more familiar with the world of frontend, I realized that t
 - Photoshop, Figma, Zeplin
 - Responsive web design principles
 - SEO
-- ## Code example
+## Code example
 ```javascript
 function squareDigits(num) {
   return +num.toString().split("").map(item => Math.pow(item, 2)).join("");
