@@ -52,6 +52,19 @@ img {
   background-color: #5a6682;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-border {
   height: 50px;
   margin-left: -50px;
@@ -108,4 +121,73 @@ img {
 
 .skills__list {
   padding-left: 16px;
+}
+
+.page-footer {
+  padding: 10px 50px;
+  margin-left: -50px;
+  margin-right: -50px;
+  background-color: #5a6682;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__rsschool-link {
+  position: relative;
+  width: 100px;
+  height: 37px;
+}
+
+.page-footer__rsschool-link:hover {
+  opacity: 0.6;
+}
+
+.page-footer__rsschool-link:active,
+.page-footer__rsschool-link:focus {
+  opacity: 0.3;
+}
+
+.page-footer__rsschool-link::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 37px;
+  background-image: url(../img/icon-rsschool.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.page-footer__year {
+  font-size: 35px;
+}
+
+.page-footer__github-link {
+  position: relative;
+  width: 37px;
+  height: 37px;
+}
+
+.page-footer__github-link:hover {
+  opacity: 0.6;
+}
+
+.page-footer__github-link:active,
+.page-footer__github-link:focus {
+  opacity: 0.3;
+}
+
+.page-footer__github-link::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  background-image: url(../img/icon-github.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
